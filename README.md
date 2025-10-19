@@ -1,1 +1,9 @@
-# team-portfolio-project
+## 👥 Team Members
+
+| Name | GitHub Username
+|------|------------------|------|
+| **Khalil Ghanem** | [@khalilgh1](https://github.com/khalilgh1)
+| **Hacene serine nour el imane** | [@serlolz](https://github.com/serlolz)
+| **Chakib Belamri** | [@cha-ki-b](https://github.com/cha-ki-b)
+| **Lydia Khalem** | [@Lyydie](https://github.com/Lyydie)
+| **Essedik Abdel Rahim Bachounda* | [@lordseddik](https://github.com/lordseddik)
