@@ -486,3 +486,26 @@
             color: var(--muted-foreground);
             font-size: 0.875rem;
         }
+
+                @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.875rem;
+            }
+
+            .profile-image {
+                width: 10rem;
+                height: 10rem;
+            }
+
+            .timeline-item {
+                padding-left: 4rem;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
