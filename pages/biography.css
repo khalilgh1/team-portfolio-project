@@ -266,3 +266,64 @@
             background: linear-gradient(to bottom, var(--purple-500), var(--blue-500));
             border-radius: 9999px;
         }
+
+
+        /* Skills Section */
+        .skills-section {
+            background: linear-gradient(to bottom, transparent, rgba(88, 28, 135, 0.05), transparent);
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .skill-card {
+            padding: 1.5rem;
+            border-radius: 0.75rem;
+            background: rgba(37, 37, 37, 0.5);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(168, 85, 247, 0.2);
+            transition: all 0.3s;
+        }
+
+        .skill-card:hover {
+            border-color: rgba(168, 85, 247, 0.4);
+            box-shadow: 0 10px 25px -5px rgba(168, 85, 247, 0.1);
+        }
+
+        .skill-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.75rem;
+        }
+
+        .skill-name {
+            color: var(--foreground);
+            font-size: 1rem;
+        }
+
+        .skill-level {
+            color: var(--purple-400);
+        }
+
+        .progress-bar {
+            height: 0.5rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 9999px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(to right, var(--purple-500), var(--blue-500));
+            border-radius: 9999px;
+            width: 0;
+            transition: width 1s ease-out;
+        }
+
+        .progress-fill.animate {
+            animation: widthGrow 1s ease-out forwards;
+        }
