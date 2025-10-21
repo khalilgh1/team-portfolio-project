@@ -126,3 +126,118 @@
         .animate-left.animated {
             animation: fadeInLeft 0.5s ease-out forwards;
         }
+
+                /* Hero Section */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .hero-background {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to bottom right, rgba(88, 28, 135, 0.2), var(--background), rgba(29, 78, 216, 0.2));
+        }
+
+        .hero-radial {
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at 50% 50%, rgba(120, 60, 255, 0.1), transparent 50%);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 10;
+            text-align: center;
+            padding: 5rem 1.5rem;
+        }
+
+        .profile-wrapper {
+            display: inline-block;
+            margin-bottom: 2rem;
+            animation: scaleIn 0.5s ease-out;
+        }
+
+        .profile-container {
+            position: relative;
+        }
+
+        .profile-glow {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to right, var(--purple-500), var(--blue-500));
+            border-radius: 50%;
+            filter: blur(2rem);
+            opacity: 0.5;
+        }
+
+        .profile-image {
+            position: relative;
+            width: 12rem;
+            height: 12rem;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid rgba(168, 85, 247, 0.3);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        }
+
+        .gradient-text {
+            background: linear-gradient(to right, var(--purple-400), var(--blue-400));
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: fadeInUp 0.5s ease-out 0.2s backwards;
+        }
+
+        .hero-subtitle {
+            color: var(--muted-foreground);
+            max-width: 42rem;
+            margin: 0 auto 2rem;
+            animation: fadeInUp 0.5s ease-out 0.3s backwards;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            animation: fadeInUp 0.5s ease-out 0.4s backwards;
+        }
+
+        .btn {
+            padding: 0.875rem 1.5rem;
+            border-radius: 0.5rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s;
+            border: none;
+            font-size: 1rem;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: linear-gradient(to right, var(--purple-600), var(--blue-600));
+            color: white;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+        }
+
+        .btn-primary:hover {
+            background: linear-gradient(to right, var(--purple-700), var(--blue-700));
+            box-shadow: 0 10px 25px -3px rgba(168, 85, 247, 0.5);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--foreground);
+            border: 1px solid rgba(168, 85, 247, 0.3);
+        }
+
+        .btn-outline:hover {
+            background: rgba(168, 85, 247, 0.1);
+            border-color: rgba(168, 85, 247, 0.6);
+        }
