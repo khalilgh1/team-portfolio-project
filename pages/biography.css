@@ -416,3 +416,73 @@
             color: var(--muted-foreground);
             font-size: 1rem;
         }
+
+        /* Contact Section */
+        .contact-content {
+            text-align: center;
+        }
+
+        .contact-description {
+            color: var(--muted-foreground);
+            margin-bottom: 2rem;
+        }
+
+        .email-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1rem 2rem;
+            background: linear-gradient(to right, var(--purple-600), var(--blue-600));
+            color: white;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            margin-bottom: 3rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s;
+        }
+
+        .email-button:hover {
+            background: linear-gradient(to right, var(--purple-700), var(--blue-700));
+            box-shadow: 0 10px 25px -3px rgba(168, 85, 247, 0.5);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-bottom: 5rem;
+        }
+
+        .social-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 3.5rem;
+            height: 3.5rem;
+            border: 1px solid rgba(168, 85, 247, 0.3);
+            border-radius: 50%;
+            color: var(--muted-foreground);
+            transition: all 0.3s;
+            text-decoration: none;
+        }
+
+        .social-link:hover {
+            border-color: rgba(168, 85, 247, 0.6);
+            background: rgba(168, 85, 247, 0.1);
+            color: var(--purple-400);
+        }
+
+        .social-link svg {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+
+        .footer {
+            padding-top: 2rem;
+            border-top: 1px solid rgba(168, 85, 247, 0.2);
+        }
+
+        .footer p {
+            color: var(--muted-foreground);
+            font-size: 0.875rem;
+        }
