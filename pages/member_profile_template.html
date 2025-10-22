@@ -1,0 +1,320 @@
+: <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Member Profile</title>
+    <link rel="stylesheet" href="../css/member_profile.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-content">
+            <a href="#" class="back-button" onclick="goBack()">
+                <span>←</span>
+                <span>Back to Team</span>
+            </a>
+            <div class="member-selector">
+                <button class="member-btn active" onclick="switchMember('alexandra')">Alexandra</button>
+                <button class="member-btn" onclick="switchMember('marcus')">Marcus</button>
+                <button class="member-btn" onclick="switchMember('sophia')">Sophia</button>
+                <button class="member-btn" onclick="switchMember('kai')">Kai</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Profile Container -->
+    <div class="profile-container" id="profileContent">
+        <!-- Profile Hero -->
+        <div class="profile-hero">
+            <div class="profile-image-container">
+                <div class="profile-image-ring"></div>
+                <div class="profile-image-wrapper" id="profileImage">A</div>
+                <div class="status-badge">
+                    <div class="status-dot"></div>
+                    <span>Available</span>
+                </div>
+            </div>
+
+            <div class="profile-info">
+                <h1 id="memberName">Alexandra Stone</h1>
+                <div class="role-title" id="memberRole">Chief Technology Officer</div>
+                
+                <div class="profile-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">15+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">98%</div>
+                        <div class="stat-label">Client Satisfaction</div>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <a href="#" class="social-link" onclick="return false">💼</a>
+                    <a href="#" class="social-link" onclick="return false">🐙</a>
+                    <a href="#" class="social-link" onclick="return false">🐦</a>
+                    <a href="#" class="social-link" onclick="return false">📧</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Content Grid -->
+        <div class="content-grid">
+            <!-- Main Content -->
+            <div class="main-content">
+                <!-- About Section -->
+                <div class="section-card">
+                    <h2>About Me</h2>
+                    <p id="aboutText">
+                        Visionary technology leader with over 15 years of experience architecting and delivering enterprise-scale solutions that drive digital transformation. My expertise spans cloud infrastructure, microservices architecture, and leading high-performing engineering teams.
+                    </p>
+                    <p>
+                        I'm passionate about leveraging cutting-edge technologies to solve complex business challenges and mentor the next generation of tech leaders. My approach combines technical excellence with strategic thinking to deliver solutions that scale.
+                    </p>
+                    <p>
+                        When I'm not coding or leading teams, you'll find me speaking at tech conferences, contributing to open-source projects, or exploring the latest developments in AI and quantum computing.
+                    </p>
+                </div>
+
+                <!-- Skills Section -->
+                <div class="section-card">
+                    <h2>Skills & Expertise</h2>
+                    <div class="skills-grid" id="skillsGrid">
+                        <div class="skill-item">
+                            <div class="skill-icon">☁️</div>
+                            <div class="skill-info">
+                                <div class="skill-name">Cloud Architecture</div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 95%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">🏗️</div>
+                            <div class="skill-info">
+                                <div class="skill-name">System Design</div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 98%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">👥</div>
+                            <div class="skill-info">
+                                <div class="skill-name">Team Leadership</div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 92%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">🔧</div>
+                            <div class="skill-info">
+                                <div class="skill-name">DevOps</div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 88%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">🤖</div>
+                            <div class="skill-info">
+                                <div class="skill-name">AI/ML Integration</div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">🔐</div>
+                            <div class="skill-info">
+                                <div class="skill-name">Security</div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Featured Projects -->
+                <div class="section-card">
+                    <h2>Featured Projects</h2>
+                    <div id="projectsContainer">
+                        <div class="project-item">
+                            <div class="project-header">
+                                <div class="project-title">Global E-Commerce Platform</div>
+                                <div class="project-year">2024</div>
+                            </div>
+                            <div class="project-description">
+                                Led the architecture and implementation of a distributed e-commerce platform serving 10M+ users across 30 countries. Implemented microservices architecture with event-driven design, achieving 99.99% uptime.
+                            </div>
+                            <div class="project-tags">
+                                <span class="tag">AWS</span>
+                                <span class="tag">Kubernetes</span>
+                                <span class="tag">Node.js</span>
+                                <span class="tag">React</span>
+                            </div>
+                        </div>
+
+                        <div class="project-item">
+                            <div class="project-header">
+                                <div class="project-title">AI-Powered Analytics Engine</div>
+                                <div class="project-year">2023</div>
+                            </div>
+                            <div class="project-description">
+                                Designed and built a real-time analytics platform processing 1B+ events daily. Integrated machine learning models for predictive insights and anomaly detection.
+                            </div>
+                            <div class="project-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">TensorFlow</span>
+                                <span class="tag">Apache Kafka</span>
+                                <span class="tag">PostgreSQL</span>
+                            </div>
+                        </div>
+
+                        <div class="project-item">
+                            <div class="project-header">
+                                <div class="project-title">Banking Security Framework</div>
+                                <div class="project-year">2022</div>
+                            </div>
+                            <div class="project-description">
+                                Architected enterprise-grade security infrastructure for major financial institution. Implemented zero-trust architecture and achieved SOC 2 Type II compliance.
+                            </div>
+                            <div class="project-tags">
+                                <span class="tag">Security</span>
+                                <span class="tag">Java</span>
+                                <span class="tag">OAuth</span>
+                                <span class="tag">Compliance</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience Timeline -->
+                <div class="section-card">
+                    <h2>Work Experience</h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-date">2020 - Present</div>
+                            <div class="timeline-title">Chief Technology Officer</div>
+                            <div class="timeline-company">Elite Tech Solutions</div>
+                            <div class="timeline-description">
+                                Leading technology strategy and innovation for a team of 50+ engineers. Spearheading digital transformation initiatives and driving adoption of cloud-native architectures.
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2016 - 2020</div>
+                            <div class="timeline-title">VP of Engineering</div>
+                            <div class="timeline-company">CloudTech Inc.</div>
+                            <div class="timeline-description">
+                                Managed multiple engineering teams and oversaw the migration of legacy systems to modern cloud infrastructure. Increased deployment frequency by 400%.
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2012 - 2016</div>
+                            <div class="timeline-title">Senior Software Architect</div>
+                            <div class="timeline-company">Global Systems Corp</div>
+                            <div class="timeline-description">
+                                Designed and implemented enterprise solutions for Fortune 500 clients. Led architectural reviews and established best practices for system design.
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2009 - 2012</div>
+                            <div class="timeline-title">Lead Developer</div>
+                            <div class="timeline-company">StartUp Ventures</div>
+                            <div class="timeline-description">
+                                Built scalable web applications from the ground up. Mentored junior developers and established coding standards for the team.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <!-- Certifications -->
+                <div class="section-card">
+                    <h2>Certifications</h2>
+                    <div class="cert-item">
+                        <div class="cert-icon">☁️</div>
+                        <div class="cert-info">
+                            <h3>AWS Solutions Architect</h3>
+                            <div class="cert-issuer">Amazon Web Services</div>
+                        </div>
+                    </div>
+                    <div class="cert-item">
+                        <div class="cert-icon">🐳</div>
+                        <div class="cert-info">
+                            <h3>Kubernetes Admin</h3>
+                            <div class="cert-issuer">CNCF</div>
+                        </div>
+                    </div>
+                    <div class="cert-item">
+                        <div class="cert-icon">🔐</div>
+                        <div class="cert-info">
+                            <h3>Security+ Certified</h3>
+                            <div class="cert-issuer">CompTIA</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="section-card">
+                    <h2>Contact Info</h2>
+                    <div class="contact-info-card">
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div class="contact-details">
+                                <div class="contact-label">Email</div>
+                                <div class="contact-value">alexandra@elite.team</div>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📱</div>
+                            <div class="contact-details">
+                                <div class="contact-label">Phone</div>
+                                <div class="contact-value">+1 (555) 123-4567</div>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div class="contact-details">
+                                <div class="contact-label">Location</div>
+                                <div class="contact-value">San Francisco, CA</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Availability -->
+                <div class="section-card">
+                    <div class="availability-card">
+                        <h3>Current Status</h3>
+                        <div class="availability-status">Available for Projects</div>
+                        <p style="color: rgba(255,255,255,0.6); margin-bottom: 1.5rem;">
+                            Open to consulting opportunities and speaking engagements
+                        </p>
+                        <a href="#" class="hire-button" onclick="return false">Get in Touch</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="profile-script.js"></script>
+</body>
+</html>
