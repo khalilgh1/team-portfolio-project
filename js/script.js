@@ -38,9 +38,7 @@
         // Add click handlers to team cards (you can link these to individual pages)
         document.querySelectorAll('.team-card').forEach((card, index) => {
             card.addEventListener('click', () => {
-                // Placeholder - you can change these to actual page links
-                alert(`This will link to Member ${index + 1}'s profile page`);
-                // For actual navigation: window.location.href = `member${index + 1}.html`;
+                // window.location.href = `member${index + 1}.html`;
             });
         });
 
