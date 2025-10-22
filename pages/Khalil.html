@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Member Profile</title>
+    <link rel="stylesheet" href="../css/member_profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+    </div>
+    <nav>
+        <div class="nav-content">
+            <a href="#" class="back-button" onclick="goBack()">
+                <span>←</span>
+                <span>Back to Team</span>
+            </a>
+            <div class="member-selector">
+                <a href="Chakib.html"><button class="member-btn">Chakib</button></a>
+                <a href="Khalil.html"><button class="member-btn active">Khalil</button></a>
+                <a href="Serine.html"><button class="member-btn">Serine</button></a>
+                <a href="Essedik.html"><button class="member-btn">Essedik</button></a>
+                <a href="Lydia.html"><button class="member-btn">Lydia</button></a>
+            </div>
+        </div>
+    </nav>
+    <!-- Profile Container -->
+    <div class="profile-container" id="profileContent">
+
+        <!-- Profile Hero -->
+        <div class="profile-hero">
+            <div class="profile-image-container">
+                <div class="profile-image-ring"></div>
+                <div class="profile-image-wrapper" id="profileImage">
+                    <img src="/assets/images/khalil.png" alt="">
+                </div>
+                <div class="status-badge">
+                    <div class="status-dot"></div>
+                    <span>Available</span>
+                </div>
+            </div>
+
+            <div class="profile-info">
+                <h1 id="memberName">Khalil Ghanem</h1>
+                <div class="role-title" id="memberRole">AI student & Full-Stack Developer</div>
+
+                <div class="profile-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">3+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Technologies Used</div>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://www.instagram.com/_khalil_gh_/" class="social-link" target="_blank" rel="noopener"
+                        title="social link"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/khalilgh1" class="social-link" target="_blank" rel="noopener"
+                        title="social link"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/khalil-ghanem-795845316/" class="social-link" target="_blank"
+                        rel="noopener" title="social link"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:khalil.ghanem@ensia.edu.dz" class="social-link" title="Email Khalil" target="_blank"
+                        rel="noopener" title="social link"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-card">
+                    <h2>Featured Projects</h2>
+                    <div id="projectsContainer">
+                        <div class="project-item">
+                            <div class="project-header">
+                                <div class="project-title">Trendify Ecommerce Website</div>
+                                <div class="project-year">2025</div>
+                            </div>
+                            <div class="project-description">
+                                Created a full-stack ecommerce website with Djangp framework.It includes product CRUD, admin panel and email notifications. 
+                            </div>
+                            <div class="project-tags">
+                                <span class="tag">Django</span>
+                                <span class="tag">HTML/CSS</span>
+                                <span class="tag">SQLite</span> 
+                            </div>
+                        </div>
+
+                        <div class="project-item">
+                            <div class="project-header">
+                                <div class="project-title">AI-Powered Quranic Verses Selector</div>
+                                <div class="project-year">2023</div>
+                            </div>
+                            <div class="project-description">
+                                Developed a Python application that utilizes the A* search algorithm to efficiently select Quranic verses based on length and the number of verses.
+                            </div>
+                            <div class="project-tags">
+                                <span class="tag">Artificial Intelligence</span>
+                                <span class="tag">A*</span>
+                                <span class="tag">Python</span>
+                                </span>
+                            </div>
+                        </div>
+                            
+
+                        </div>
+                    </div>
+                </div>
+
+
+    <script src="profile-script.js"></script>
+</body>
+<style>
+    .social-link {
+        color: #fff;
+        font-size: 1.6rem;
+        margin: 0 10px;
+        transition: color 0.3s ease;
+    }
+
+    .social-link:hover .fa-instagram {
+        color: #E1306C;
+    }
+
+    /* Instagram pink */
+    .social-link:hover .fa-github {
+        color: #333;
+    }
+
+    /* GitHub black */
+    .social-link:hover .fa-linkedin {
+        color: #0A66C2;
+    }
+
+    /* LinkedIn blue */
+    .social-link:hover .fa-envelope {
+        color: #D44638;
+    }
+
+    /* Gmail red */
+</style>
+
+</html>
