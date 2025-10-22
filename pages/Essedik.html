@@ -22,11 +22,11 @@
             <span>Back to Team</span>
         </a>
         <div class="member-selector">
-            <button class="member-btn active" onclick="switchMember('seddik')">Seddik</button>
-            <button class="member-btn" onclick="switchMember('chakib')">Chakib</button>
-            <button class="member-btn" onclick="switchMember('serine')">Serine</button>
-            <button class="member-btn" onclick="switchMember('lydia')">Lydia</button>
-            <button class="member-btn" onclick="switchMember('khalil')">Khalil</button>
+            <button href="Essedik.html" class="member-btn active" onclick="switchMember('seddik')">Seddik</button>
+            <button href="Chakib.html" class="member-btn" onclick="switchMember('chakib')">Chakib</button>
+            <button href="Serine.html" class="member-btn" onclick="switchMember('serine')">Serine</button>
+            <button href="Lydia.html" class="member-btn" onclick="switchMember('lydia')">Lydia</button>
+            <button href="Khalil.html" class="member-btn" onclick="switchMember('khalil')">Khalil</button>
         </div>
     </div>
 </nav>
@@ -76,6 +76,77 @@
 
     <script src="profile-script.js"></script>
 </body>
+<div class="main-content">
+    <!-- About Section -->
+    <div class="section-card">
+        <h2>About Me</h2>
+        <p id="aboutText">
+        </p>
+        <p>
+            
+        </p>
+        <p>
+            
+        </p>
+    </div>
+</div>
+<div class="section-card">
+    <h2>Skills & Expertise</h2>
+    <div class="skills-grid" id="skillsGrid">
+
+        <div class="skill-item">
+            <div class="skill-icon">💻</div>
+            <div class="skill-info">
+                <div class="skill-name">C++ Programming</div>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 90%"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-item">
+            <div class="skill-icon">💎</div>
+            <div class="skill-info">
+                <div class="skill-name">pixel art Assets design</div>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 85%"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="section-card">
+    <h2>Featured Projects</h2>
+    <div id="projectsContainer">
+
+        <div class="project-item">
+            <div class="project-header">
+                <div class="project-title">Team Portfolio Website</div>
+                <div class="project-year">2025</div>
+            </div>
+            <div class="project-description">
+                Developed a collaborative portfolio platform where team members can showcase their work interactively. 
+                Implemented modular components for individual profiles, animations, and dynamic updates.
+            </div>
+            <div class="project-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Git</span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section-card" id="contact">
+    <h2>Contact Me</h2>
+    <p>If you’d like to collaborate, share ideas, or just say hello — feel free to reach out!</p>
+    
+    <div class="contact-info">
+        <p><strong>Email:</strong> <a href="mailto:lordseddik@gmail.com">lordseddik@gmail.com</a></p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/lordseddik" target="_blank">github.com/lordseddik</a></p>
+    </div>
+</div>
 <style>
 .social-link {
   color: #fff;
