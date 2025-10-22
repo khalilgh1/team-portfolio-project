@@ -21,14 +21,14 @@
             <span>←</span>
             <span>Back to Team</span>
         </a>
-        <div class="member-selector">
-            <button href="Essedik.html" class="member-btn active" onclick="switchMember('seddik')">Seddik</button>
-            <button href="Chakib.html" class="member-btn" onclick="switchMember('chakib')">Chakib</button>
-            <button href="Serine.html" class="member-btn" onclick="switchMember('serine')">Serine</button>
-            <button href="Lydia.html" class="member-btn" onclick="switchMember('lydia')">Lydia</button>
-            <button href="Khalil.html" class="member-btn" onclick="switchMember('khalil')">Khalil</button>
-        </div>
-    </div>
+            <div class="member-selector">
+                
+                <a href="Chakib.html"><button class="member-btn" onclick="switchMember('alexandra')">chakib</button></a>
+                <a href="Khalil.html"><button class="member-btn" onclick="switchMember('marcus')">Khalil</button></a>
+                <a href="Serine.html"><button class="member-btn" onclick="switchMember('sophia')">Serine</button></a>
+                <a href="Essedik.html"><button class="member-btn" onclick="switchMember('kai')">Essedik</button></a>
+                <a href="Lydia.html"><button class="member-btn" onclick="switchMember('kai')">Lydia</button></a>
+            </div>
 </nav>
 <!-- Profile Container -->
 <div class="profile-container" id="profileContent">
@@ -37,7 +37,10 @@
     <div class="profile-hero">
         <div class="profile-image-container">
             <div class="profile-image-ring"></div>
-            <div class="profile-image-wrapper" id="profileImage">S</div>
+            <div class="profile-image-wrapper" id="profileImage">
+                <img src="../assets/images/seddik.jpg" alt="Profile Image">
+            </div>
+            
             <div class="status-badge">
                 <div class="status-dot"></div>
                 <span>Available</span>
@@ -81,23 +84,31 @@
     <div class="section-card">
         <h2>About Me</h2>
         <p id="aboutText">
-        </p>
-        <p>
-            
-        </p>
-        <p>
-            
-        </p>
+    I’m Seddik, a passionate developer and computer science student.
+</p>
+<p>
+    I have expertise in problem-solving and delivering dedicated software solutions.
+</p>
+<p>
+    I am currently pursuing my Master’s degree in AI and Data Science, while also i had explored some specialized fields such as game development, and small servers design.
+</p>
+<p>
+    I enjoy reading about history and theology, which broadens my perspective and inspires my work.
+</p>
+<p>
+    I am eager to apply what I’ve learned to real-life situations, including resource management in institutions.
+</p>
+
     </div>
 </div>
 <div class="section-card">
-    <h2>Skills & Expertise</h2>
+    <h2>Specialized Skills</h2>
     <div class="skills-grid" id="skillsGrid">
 
         <div class="skill-item">
-            <div class="skill-icon">💻</div>
+            <div class="skill-icon">🧠</div>
             <div class="skill-info">
-                <div class="skill-name">C++ Programming</div>
+                <div class="skill-name">Problem Solving</div>
                 <div class="skill-bar">
                     <div class="skill-progress" style="width: 90%"></div>
                 </div>
@@ -105,17 +116,47 @@
         </div>
 
         <div class="skill-item">
-            <div class="skill-icon">💎</div>
+            <div class="skill-icon">🎮</div>
             <div class="skill-info">
-                <div class="skill-name">pixel art Assets design</div>
+                <div class="skill-name">Game Development</div>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 75%"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-item">
+            <div class="skill-icon">🖥️</div>
+            <div class="skill-info">
+                <div class="skill-name">Server Design</div>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 70%"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-item">
+            <div class="skill-icon">🏛️</div>
+            <div class="skill-info">
+                <div class="skill-name">Institutions Management Studies</div>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 40%"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-item">
+            <div class="skill-icon">📖</div>
+            <div class="skill-info">
+                <div class="skill-name">Research & Reading</div>
                 <div class="skill-bar">
                     <div class="skill-progress" style="width: 85%"></div>
                 </div>
             </div>
         </div>
 
-    </div>
-</div>
+    </diV>
+
 <div class="section-card">
     <h2>Featured Projects</h2>
     <div id="projectsContainer">
@@ -136,14 +177,51 @@
                 <span class="tag">Git</span>
             </div>
         </div>
+
+        <!-- Project 1: Stock Market Helper -->
+        <div class="project-item">
+            <div class="project-header">
+                <div class="project-title">Stock Market Helper</div>
+                <div class="project-year">2024</div>
+            </div>
+            <div class="project-description">
+                An AI-powered search agent that helps allocate funds based on your budget and current stock market conditions.
+            </div>
+            <div class="project-tags">
+                <span class="tag">AI</span>
+                <span class="tag">Python</span>
+                
+                <span class="tag">Finance</span>
+            </div>
+        </div>
+
+        <!-- Project 2: Automated Statistical Programs for Gaming Cups -->
+        <div class="project-item">
+            <div class="project-header">
+                <div class="project-title">Automated Statistical Programs for Gaming Cups</div>
+                <div class="project-year">2021</div>
+            </div>
+            <div class="project-description">
+                Created software to automatically generate statistics and analytics for competitive gaming tournaments.
+                Streamlined data collection and reporting for teams and organizers.
+            </div>
+            <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Office</span>
+                <span class="tag">Statistics</span>
+                <span class="tag">Gaming</span>
+            </div>
+        </div>
+
     </div>
 </div>
+
 <div class="section-card" id="contact">
     <h2>Contact Me</h2>
     <p>If you’d like to collaborate, share ideas, or just say hello — feel free to reach out!</p>
     
     <div class="contact-info">
-        <p><strong>Email:</strong> <a href="mailto:lordseddik@gmail.com">lordseddik@gmail.com</a></p>
+        <p><strong>Email:</strong> <a href="mailto:gamerseddik@gmail.com">gamerseddik@gmail.com</a></p>
         <p><strong>GitHub:</strong> <a href="https://github.com/lordseddik" target="_blank">github.com/lordseddik</a></p>
     </div>
 </div>
