@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Member Profile</title>
+    <link rel="stylesheet" href="../css/member_profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <!-- Animated Background -->
+<div class="bg-animation">
+    <div class="gradient-orb orb-1"></div>
+    <div class="gradient-orb orb-2"></div>
+    <div class="gradient-orb orb-3"></div>
+</div>
+<nav>
+    <div class="nav-content">
+        <a href="/index.html" class="back-button">
+            <span>←</span>
+            <span>Back to Team</span>
+        </a>
+            <div class="member-selector">
+                <a href="Chakib.html"><button class="member-btn">Chakib</button></a>
+                <a href="Essedik.html"><button class="member-btn active">Essedik</button></a>
+                <a href="Khalil.html"><button class="member-btn">Khalil</button></a>
+                <a href="Lydia.html"><button class="member-btn">Lydia</button></a>
+                <a href="Serine.html"><button class="member-btn">Serine</button></a>
+            </div>
+</nav>
+<!-- Profile Container -->
+<div class="profile-container" id="profileContent">
+
+    <!-- Profile Hero -->
+    <div class="profile-hero">
+        <div class="profile-image-container">
+            <div class="profile-image-ring"></div>
+            <div class="profile-image-wrapper" id="profileImage">
+                <img src="../assets/images/seddik.jpg" alt="Profile Image">
+            </div>
+            
+            <div class="status-badge">
+                <div class="status-dot"></div>
+                <span>Available</span>
+            </div>
+        </div>
+
+        <div class="profile-info">
+            <h1 id="memberName">Seddik</h1>
+            <div class="role-title" id="memberRole">Full-Stack Developer</div>
+            
+            <div class="profile-stats">
+                <div class="stat-item">
+                    <div class="stat-number">3+</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">5+</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">Game-dev</div>
+                    <div class="stat-label">level designer & 2d assets</div>
+                </div>
+            </div>
+
+            <div class="social-links">
+                <a href="https://www.instagram.com/seddik.io/" class="social-link" onclick="return false"><i class="fab fa-instagram"></i></a>
+<a href="https://github.com/Lord-Seddik" class="social-link" onclick="return false"><i class="fab fa-github"></i></a>
+<a href="#" class="social-link" onclick="return false"><i class="fab fa-linkedin"></i></a>
+<a href="#" class="social-link" onclick="return false"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <script src="profile-script.js"></script>
+</body>
+<div class="main-content">
+    <!-- About Section -->
+    <div class="section-card">
+        <h2>About Me</h2>
+        <p id="aboutText">
+    I’m Seddik, a passionate developer and computer science student.
+</p>
+<p>
+    I have expertise in problem-solving and delivering dedicated software solutions.
+</p>
+<p>
+    I am currently pursuing my Master’s degree in AI and Data Science, while also i had explored some specialized fields such as game development, and small servers design.
+</p>
+<p>
+    I enjoy reading about history and theology, which broadens my perspective and inspires my work.
+</p>
+<p>
+    I am eager to apply what I’ve learned to real-life situations, including resource management in institutions.
+</p>
+
+    </div>
+</div>
+<div class="section-card">
+    <h2>Specialized Skills</h2>
+    <div class="skills-grid" id="skillsGrid">
+
+        <div class="skill-item">
+            <div class="skill-icon">🧠</div>
+            <div class="skill-info">
+                <div class="skill-name">Problem Solving</div>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 90%"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-item">
+            <div class="skill-icon">🎮</div>
+            <div class="skill-info">
+                <div class="skill-name">Game Development</div>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 75%"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-item">
+            <div class="skill-icon">🖥️</div>
+            <div class="skill-info">
+                <div class="skill-name">Server Design</div>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 70%"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-item">
+            <div class="skill-icon">🏛️</div>
+            <div class="skill-info">
+                <div class="skill-name">Institutions Management Studies</div>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 40%"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-item">
+            <div class="skill-icon">📖</div>
+            <div class="skill-info">
+                <div class="skill-name">Research & Reading</div>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 85%"></div>
+                </div>
+            </div>
+        </div>
+
+    </diV>
+
+<div class="section-card">
+    <h2>Featured Projects</h2>
+    <div id="projectsContainer">
+
+        <div class="project-item">
+            <div class="project-header">
+                <div class="project-title">Team Portfolio Website</div>
+                <div class="project-year">2025</div>
+            </div>
+            <div class="project-description">
+                Developed a collaborative portfolio platform where team members can showcase their work interactively. 
+                Implemented modular components for individual profiles, animations, and dynamic updates.
+            </div>
+            <div class="project-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Git</span>
+            </div>
+        </div>
+
+        <!-- Project 1: Stock Market Helper -->
+        <div class="project-item">
+            <div class="project-header">
+                <div class="project-title">Stock Market Helper</div>
+                <div class="project-year">2024</div>
+            </div>
+            <div class="project-description">
+                An AI-powered search agent that helps allocate funds based on your budget and current stock market conditions.
+            </div>
+            <div class="project-tags">
+                <span class="tag">AI</span>
+                <span class="tag">Python</span>
+                
+                <span class="tag">Finance</span>
+            </div>
+        </div>
+
+        <!-- Project 2: Automated Statistical Programs for Gaming Cups -->
+        <div class="project-item">
+            <div class="project-header">
+                <div class="project-title">Automated Statistical Programs for Gaming Cups</div>
+                <div class="project-year">2021</div>
+            </div>
+            <div class="project-description">
+                Created software to automatically generate statistics and analytics for competitive gaming tournaments.
+                Streamlined data collection and reporting for teams and organizers.
+            </div>
+            <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Office</span>
+                <span class="tag">Statistics</span>
+                <span class="tag">Gaming</span>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="section-card" id="contact">
+    <h2>Contact Me</h2>
+    <p>If you’d like to collaborate, share ideas, or just say hello — feel free to reach out!</p>
+    
+    <div class="contact-info">
+        <p><strong>Email:</strong> <a href="mailto:gamerseddik@gmail.com">gamerseddik@gmail.com</a></p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/lordseddik" target="_blank">github.com/lordseddik</a></p>
+    </div>
+</div>
+<style>
+.social-link {
+  color: #fff;
+  font-size: 1.6rem;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.social-link:hover .fa-instagram { color: #E1306C; } /* Instagram pink */
+.social-link:hover .fa-github { color: #333; }       /* GitHub black */
+.social-link:hover .fa-linkedin { color: #0A66C2; }  /* LinkedIn blue */
+.social-link:hover .fa-envelope { color: #D44638; }  /* Gmail red */
+</style>
+</html>
