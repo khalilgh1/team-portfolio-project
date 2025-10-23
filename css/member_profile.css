@@ -572,7 +572,9 @@ a {
     font-size: 0.9rem;
     line-height: 1.5;
   }
-
+    nav{
+        display:none;
+    }
   .profile-container {
     padding: 100px 5% 3%;
   }
