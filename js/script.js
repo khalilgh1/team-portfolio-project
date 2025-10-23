@@ -1,4 +1,4 @@
-        // Create floating particles
+        // floating particles
         function createParticles() {
             const container = document.getElementById('particles');
             for (let i = 0; i < 50; i++) {
@@ -35,12 +35,17 @@
             });
         });
 
-        // Add click handlers to team cards (you can link these to individual pages)
-        document.querySelectorAll('.team-card').forEach((card, index) => {
+        // Add click handlers to team cards 
+        document.querySelectorAll('.team-card').forEach(card => {
             card.addEventListener('click', () => {
-                // window.location.href = `member${index + 1}.html`;
+                const link = card.querySelector('a');
+                if (link && link.href) {
+                    window.open(link.href, '_blank');
+                }
             });
         });
+
+
 
         // Intersection Observer for scroll animations
         const observerOptions = {
