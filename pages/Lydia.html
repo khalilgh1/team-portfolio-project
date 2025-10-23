@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lydia Khalem | AI Engineering Student Portfolio</title>
    <link rel="stylesheet" href="../css/member_profile.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
     <!-- Animated Background -->
@@ -17,12 +18,16 @@
     <!-- Navigation -->
     <nav>
         <div class="nav-content">
-            <a href="#" class="back-button" onclick="goBack()">
+            <a href="../index.html" class="back-button">
                 <span>←</span>
                 <span>Back to Team</span>
             </a>
             <div class="member-selector">
-                <button class="member-btn active">Lydia Khalem</button>
+                <a href="Chakib.html"><button class="member-btn">Chakib</button></a>
+                <a href="Khalil.html"><button class="member-btn">Khalil</button></a>
+                <a href="Serine.html"><button class="member-btn">Serine</button></a>
+                <a href="Essedik.html"><button class="member-btn">Essedik</button></a>
+                <a href="Lydia.html"><button class="member-btn active">Lydia</button></a>
             </div>
         </div>
     </nav>
@@ -35,7 +40,7 @@
                 <div class="profile-image-ring"></div>
                 
     <div class="profile-image-wrapper" id="profileImage">
-    <img src="assets/images/lydia.jpg" alt="Lydia Khalem">
+    <img src="../assets/images/lydia.jpg" alt="Lydia Khalem">
 </div>
 
                 <div class="status-badge">
@@ -64,9 +69,9 @@
                 </div>
 
                 <div class="social-links">
-                    <a href="https://www.linkedin.com/in/lydia-khalem-073b4a306/" class="social-link">🔗</a>
-                    <a href="https://github.com/Lyydie" class="social-link">🐙</a>
-                    <a href="mailto:lydia.khalem@ensia.edu.dz" class="social-link">📧</a>
+                    <a href="https://www.linkedin.com/in/lydia-khalem-073b4a306/" class="social-link" target="_blank" rel="noopener" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Lyydie" class="social-link" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="mailto:lydia.khalem@ensia.edu.dz" class="social-link" target="_blank" rel="noopener" title="Email"><i class="fas fa-envelope"></i></a>
                 </div>
             </div>
         </div>
@@ -79,11 +84,11 @@
                 <div class="section-card">
                     <h2>About Me</h2>
                     <p>
-                        I’m <strong>Lydia Khalem</strong>, a 3rd-year AI engineering student passionate about building intelligent systems and user-friendly applications. 
+                        I'm <strong>Lydia Khalem</strong>, a 3rd-year AI engineering student passionate about building intelligent systems and user-friendly applications. 
                         I enjoy combining creativity with problem-solving through AI, optimization algorithms, and web technologies.
                     </p>
                     <p>
-                        I’ve developed strong foundations in C++, Python, and JavaScript, explored AI research, and worked with computer vision using OpenCV. 
+                        I've developed strong foundations in C++, Python, and JavaScript, explored AI research, and worked with computer vision using OpenCV. 
                         My interests include machine learning, NLP, and human-centered design.
                     </p>
                     <p>
@@ -315,5 +320,24 @@
 
     <script src="profile-script.js"></script>
 </body>
-</html>
+<style>
+    .social-link {
+        color: #fff;
+        font-size: 1.6rem;
+        margin: 0 10px;
+        transition: color 0.3s ease;
+    }
 
+    .social-link:hover .fa-linkedin {
+        color: #0A66C2;
+    }
+
+    .social-link:hover .fa-github {
+        color: #333;
+    }
+
+    .social-link:hover .fa-envelope {
+        color: #D44638;
+    }
+</style>
+</html>
