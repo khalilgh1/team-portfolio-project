@@ -8,6 +8,9 @@
 | **Lydia Khalem** | [@Lyydie](https://github.com/Lyydie) |
 | **Essedik Abdel Rahim Bachounda** | [@lordseddik](https://github.com/lordseddik) |
 
+## Website Link:
+https://khalilgh1.github.io/team-portfolio-project/
+
 ## Team Retrospective Analysis
 
 During the development of our team portfolio website, the most significant technical challenge we encountered was managing version control efficiently while multiple members worked on different sections simultaneously. Since the project involved several HTML pages and shared assets like stylesheets and JavaScript files, ensuring consistent project structure and avoiding overwriting each other’s work required careful coordination. Early in the process, we realized that our initial Git workflow lacked strict conventions for folder organization and branching, which later led to merge conflicts and confusion about where files should reside.
